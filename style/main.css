@@ -255,10 +255,15 @@ section #text span {
         cursor: pointer;
     }
     .trilhas {
-        padding: none;
+        padding: 0;
     }
     .trilhas .titulo {
-        font-size: 2rem;
+        width: auto;
+        height: auto;
+        font-size: 1.5em;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #fff;
     }
     .container {
         display: inline-flex;
