@@ -236,4 +236,16 @@ section #text span {
     #nav.active #menu {
         display: block;
     }
+    .trilhas {
+        padding: none;
+    }
+    .container {
+        display: block;
+        width: 100%;
+    }
+    .container .cards {
+        width: 100%;
+        padding: 20px;
+        overflow: visible;
+    }
 }
