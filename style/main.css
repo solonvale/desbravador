@@ -50,6 +50,7 @@ body::-webkit-scrollbar {
 #header ul li a {
     text-decoration: none;
     padding: 6px 15px;
+    margin-top: 15px;
     color: #094b65;
     border-radius: 20px;
 }
@@ -140,7 +141,7 @@ section #text span {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     z-index: 1;
 }
 
@@ -233,14 +234,34 @@ section #text span {
         height: calc(100vh - 70px);
         z-index: 1100;
     }
+    #header ul li a {
+        padding: none;
+        display: inline-flex;
+    }
     #nav.active #menu {
         display: block;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05)
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
     }
     .trilhas {
         padding: none;
     }
+    .trilhas .titulo {
+        font-size: 2rem;
+    }
     .container {
-        display: block;
+        display: inline-flex;
         width: 100%;
     }
     .container .cards {
