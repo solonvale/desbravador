@@ -222,9 +222,6 @@ section #text span {
     #header {
         padding: 20px;
     }
-    #btn-mobile {
-        display: block;
-    }
     #header ul {
         display: none;
         position: absolute;
@@ -246,14 +243,46 @@ section #text span {
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05)
     }
+    /* inicio do menu hamburguer */
     #btn-mobile {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #094b65;
         padding: .5rem 1rem;
-        font-size: 1rem;
+        font-size: 1.3em;
         border: none;
         background: none;
         cursor: pointer;
     }
+    #hamburguer {
+        border-color: #094b65;
+        border-top: 2px solid;
+        width: 20px;
+        margin-left: 10px;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    /* final do menu hamburguer */
     .trilhas {
         padding: 0;
     }
