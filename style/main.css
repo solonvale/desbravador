@@ -251,6 +251,7 @@ section #text span {
         color: #094b65;
         padding: .5rem 1rem;
         font-size: 1.3em;
+        font-style: bold;
         border: none;
         background: none;
         cursor: pointer;
@@ -287,12 +288,14 @@ section #text span {
         padding: 0;
     }
     .trilhas .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: auto;
         height: auto;
         font-size: 1.5em;
         width: 100%;
         padding: 20px;
-        border: 1px solid #fff;
     }
     .container {
         display: inline-flex;
