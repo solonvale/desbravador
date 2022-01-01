@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
     color: #fff;
 }
 
-section {
+#paisagem {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -70,7 +70,7 @@ section {
     align-items: center;
 }
 
-section::before {
+#paisagem::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -81,7 +81,7 @@ section::before {
     z-index: 10;
 }
 
-section img {
+#paisagem img {
     position: absolute;
     top: 0;
     left: 0;
@@ -91,7 +91,7 @@ section img {
     pointer-events: none;
 }
 
-section #text {
+#paisagem #text {
     position: absolute;
     color: #094b65;
     font-size: 10vw;
@@ -101,7 +101,7 @@ section #text {
     transform: translateY(-50%);
 }
 
-section #text span {
+#paisagem #text span {
     font-size: 0.20em;
     letter-spacing: 2px;
     font-weight: 400;
@@ -123,13 +123,13 @@ section #text span {
 
 /* sessao de trilhas */
 
-.trilhas {
+#trilhas {
     position: relative;
     padding: 100px;
     background: #094b65;
 }
 
-.trilhas .titulo {
+#trilhas .titulo {
     font-size: 3.2em;
     color: #fff;
     margin-bottom: 50px;
