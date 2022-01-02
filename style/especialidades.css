@@ -1,23 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rancho&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    position: relative;
     background: #094b65;
     text-align: center;
 }
-
-header {
+#header {
     background-color: #fff;
 }
-
-
-/* cards das classes de desbravador */
-
 .card-sec {
     position: relative;
     top: 80px;
@@ -26,7 +13,6 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
-
 .card-sec .cont {
     position: relative;
     width: 180px;
@@ -44,22 +30,10 @@ header {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
-
 .card-sec .cont .card-top {
-    text-align: center;
+    text-align:center
 }
-
 .imagem-classes {
     width: 6em;
     height: 6em;
-}
-
-#forum {
-    position: relative;
-}
-
-@media (max-width: 600px) {
-    .card-sec {
-        width: 90%;
-    }
 }
